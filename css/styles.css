@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
+
+body{
+    margin: 0 auto;
+    background-color: #1695DA;
+    font-family: 'Kenia', cursive;
+}
+
+header{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    background-color: white;
+
+    position: absolute;
+    z-index: 999;
+    padding: 50px;
+    line-height: 20px;
+}
+
+header h1 {
+    font-size: 80px;
+}
+
+header p {
+    font-size: 25px;
+}
+
+/* 2eme Partie Le Slider */
+
+.slider{
+    overflow: hidden;
+    width: 1080px;
+    height: 600px;
+}
+
+.slides{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    opacity: 0.5;
+    background-color: blue;
+    animation: slide 15s infinite ease;
+
+}
+
+@keyframes slide {
+
+    0%{
+        transform: translateX(0);
+    }
+   
+    10%{
+        transform: translateX(0);
+    }
+
+    33%{
+        transform: translateX(-500px);
+    }
+
+    50%{
+        transform: translateX(-500px)
+    }
+
+    100%{
+        transform: translateX(1);
+    }
+    
+}
+
+/* Menu nav */
+
+nav li{
+    list-style-type: none;
+    padding: 70px;
+    font-size: 25px;
+    color: #fff;
+    width: 25%;
+    text-align: center;
+    
+}
+
+nav li:hover{
+    transform: scale(1.2);
+    font-size: 35px;
+    transition: 0.3s;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.pizza{
+    background: url(../images/pizza-banner.jpg)
+}
+
+.salade{
+    background: url(../images/salad-banner.jpg)
+}
+
+.burger{
+    background: url(../images/burger-banner.jpg)
+}
+
+.boisson{
+    background: url(../images/boisson-banner.jpg)
+}
